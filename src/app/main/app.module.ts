@@ -8,6 +8,9 @@ import {MatButtonModule, MatIconModule} from '@angular/material';
 import {RouterModule, Routes} from '@angular/router';
 import {TranslateModule} from '@ngx-translate/core';
 import {AuthModule} from './component/auth/auth.module';
+import { RegistrationComponent } from './component/registration/registration.component';
+import {RegistrationModule} from './component/registration/registration.module';
+import {BlogPostModule} from './component/blog-post/blog-post.module';
 
 const appRoutes: Routes = [
   {
@@ -33,7 +36,10 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatIconModule,
 
-    AuthModule
+    // Modules
+    AuthModule,
+    RegistrationModule,
+    BlogPostModule
   ],
   providers: [],
   bootstrap: [AppComponent]
