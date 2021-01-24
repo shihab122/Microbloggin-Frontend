@@ -1,11 +1,18 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "979d0b8e-9250-4d14-bd05-5fe18d16862a"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "Frontend": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,6 +20,40 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "rxjs-compat",
+              "@ks89/angular-modal-gallery",
+              "mousetrap",
+              "hammerjs",
+              "firebase/app",
+              "dragula",
+              "knob",
+              "chartist",
+              "chartjs-plugin-streaming",
+              "@firebase/app",
+              "chart.js",
+              "dom-set",
+              "crossvent",
+              "contra/emitter",
+              "rxjs",
+              "ngx-masonry",
+              "@firebase/firestore",
+              "rxjs/operators",
+              "rxjs/Subject",
+              "rxjs/internal/operators",
+              "rxjs/add/operator/map",
+              "rxjs/Subscription",
+              "masonry-layout",
+              "imagesloaded",
+              "rxjs-compat/add/operator/map",
+              "@mattlewis92/dom-autoscroller",
+              "dom-plane",
+              "@mattlewis92/dom-autoscroller",
+              "@tweenjs/tween.js",
+              "photoswipe",
+              "photoswipe/dist/photoswipe-ui-default",
+              "angular-calendar/date-adapters/date-fns"
+            ],
             "outputPath": "dist/Frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
